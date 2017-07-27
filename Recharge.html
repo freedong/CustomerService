@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>充值记录</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/terminal.css">
+	<link rel="stylesheet" href="css/Modify.css">
+
+	<link rel="stylesheet" type="text/css" href="css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+</head>
+<body id="con_bg">
+	<div class="ter_infor">
+		<div class="infor_header">
+			<div class="infor_header_fl">
+				<img src="images/uin_logo.png" alt="">
+				<span>终端客户服务平台</span>
+			</div>
+			<div class="infor_header_cen">
+				<span class="sp_date">上次登录时间：2017-07-02  20:20</span>
+			</div>
+			<div class="infor_header_fr">
+				<p><span>欢迎您：加百分比</span><a href="#">修改密码</a><i>|</i><a href="#">退出</a></p>
+			</div>
+		</div>
+		<div class="infor_con">
+			<div class="infor_fl floatLeft">
+				<ul>
+					<li><a href="information.html" class="ajb">基本信息</a></li>
+					<li><a href="Call.html" class="ath">通话记录</a></li>
+					<li class="abg"><a href="Recharge.html" class="acz"><i></i>充值记录</a></li>
+					<li><a href="Billing.html" class="azd ls25">账单</a></li>
+				</ul>
+			</div>
+			<div class="infor_fr">
+				<div id="triangle-topleft">
+					<img src="images/shadow.png" alt="">
+				</div>
+				<div class="rec_fr_div">
+					<div class="rec_tj">
+						<h3 class="h3h">条件查询：</h3>
+						<div class="rec_tj_cx">
+							<label for="" class="labels">充值时间：</label>
+						<input class="easyui-datetimebox" style="width:150px;height: 24px;">
+						<span class="zhi">至</span>
+						<input class="easyui-datetimebox" style="width:150px;height: 24px;">
+						<ul class="clearFloat rec_tj_ul">
+							<li><a href="#">今天</a></li>
+							<li><a href="#" class="a_col">最近一个月</a></li>
+							<li><a href="#">3个月</a></li>
+							<li><a href="#">1年</a></li>
+						</ul>
+						<div class="rec_tj_btn">
+							<button class="t_btn_red t_btn">查询</button>
+							<button class="t_btn_blue t_btn ml10">导出</button>
+						</div>
+						</div>
+					</div>
+					<div class="rec_cz">
+						<h3 class="h3h">充值记录：</h3>
+						<div class="rec_cz_table">
+							<table id="dg" title=" " style="width:986px;height:auto;"
+							data-options="rownumbers:true,singleSelect:true,collapsible:true,pagination:true,url:'datagrid_data6.json',method:'get'">
+							<thead>
+								<tr>
+									<th data-options="field:'attr1',width:230,align:'center'">号码</th>
+									<th data-options="field:'itemid',width:230,align:'center'">	充值时间</th>
+									<th data-options="field:'status',width:232,align:'center'">充值金额</th>
+									<th data-options="
+									field:'note',width:240,align:'center'">备注</th>
+								</tr>
+							</thead>
+						</table>
+						<script type="text/javascript">
+							$(function(){
+								var pager = $('#dg').datagrid().datagrid('getPager');	
+									// get the pager of datagrid
+								pager.pagination({
+				
+								});	
+
+							})
+						</script>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

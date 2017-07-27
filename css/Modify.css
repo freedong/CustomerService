@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* easyui 弹框样式 */
+.pass_dlg{
+	background: #ffffff!important;
+	background-color: #ffffff!important;
+	// border-color: #ffffff!important;
+	border: none!important;
+	border-radius:0!important;
+	padding: 0px!important;
+}
+
+.t_pass_dlg1{
+	background-color: #ffffff!important;
+	border-color: #ffffff!important;
+	text-align: center;
+}
+
+.t_pass_dlg1 h5{
+	color: #465068;
+	font-size: 16px;
+	margin-top: 6px;
+}
+
+.t_pass_dlg1 p{
+	color: #888888;
+	font-size: 14px;
+	height: 50px;
+	margin-top: 20px;
+} 
+
+.window-shadow{
+	background: #ffffff!important; 
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important; 
+	box-shadow: none!important; 
+}
+
+.t_d_btn_qd {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #5bcdc8;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    background: -webkit-linear-gradient(#5bcdc8 , #42b1ab); 
+    background: -o-linear-gradient(#5bcdc8, #42b1ab); 
+    background: -moz-linear-gradient(#5bcdc8, #42b1ab); 
+    background: linear-gradient(#5bcdc8, #42b1ab); 
+}
+
+
+
+/* 修改源文件 */
+.datagrid-btable tr:nth-child(odd){
+	background-color: #eef4f7;
+}
+.datagrid-btable tr:nth-child(even){
+	background-color: #ffffff;
+}
+.datagrid-header-row{
+	background-color: #ffffff;
+}
+.datagrid-btable tr:nth-child(odd) .datagrid-td-rownumber{
+	background-color: #eef4f7!important;
+	background: #eef4f7!important;
+}
+.datagrid-btable tr:nth-child(even) .datagrid-td-rownumber{
+	background-color: #ffffff!important;
+	background: #ffffff!important;
+}
+.panel-body{
+	border-color: #e5e5e5!important;
+}
+
+.window-shadow{
+	background: #ffffff!important; 
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important; 
+	box-shadow: none!important; 
+}
+
+
+.textbox .textbox-text{
+	padding: 0px 0px 0px 3px!important;
+}
