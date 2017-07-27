@@ -33,14 +33,18 @@
 		<!-- 主内容 -->
 		<div class="infor_con">
 		    <!-- 左边栏 -->
-			<div class="infor_fl floatLeft">
-				<ul>
-					<li><a href="information.html" class="ajb">基本信息</a></li>
-					<li class="abg"><a href="Call.html" class="ath"><i></i>通话记录</a></li>
-					<li><a href="Recharge.html" class="acz">充值记录</a></li>
-					<li><a href="Billing.html" class="azd ls25">账单</a></li>
-				</ul>
-			</div>
+		    <div class="infor_fl floatLeft">
+		    	<div class="ab_bg">
+		    	</div>
+		    	<div class="ab_bg_ul">
+		    		<ul>
+		    			<li><a href="information.html" class="ajb">基本信息</a></li>
+		    			<li class="abg"><a href="Call.html" class="ath"><i></i>通话记录</a></li>
+		    			<li><a href="Recharge.html" class="acz">充值记录</a></li>
+		    			<li><a href="Billing.html" class="azd ls25">账单</a></li>
+		    		</ul>
+		    	</div>
+		    </div>
 			<!-- 右边栏 -->
 			<div class="infor_fr">
 				<div id="triangle-topleft">
@@ -71,23 +75,23 @@
 						<label for="">接听号码：</label>
 						<input type="text" class="input_ys">
 						<label for="">起始时间：</label>
-						<input class="easyui-datetimebox" style="width:150px;height: 24px;">
+						<input class="easyui-datebox" style="width:100px;height: 24px;">
 						<span class="zhi">至</span>
-						<input class="easyui-datetimebox" style="width:150px;height: 24px;">
-						<button class="t_btn_red t_btn">查询</button>
-						<button class="t_btn_blue t_btn">导出</button>
+						<input class="easyui-datebox" style="width:100px;height: 24px;">
+						<button class="t_btn_red t_btn ml30">查询</button>
+						<button class="t_btn_blue t_btn ml10">导出</button>
 					</div>
 
 					<div class="call_list">
 						<div class="call_player">
-							<span>播放器：</span>
-							<audio controls>
+							<span class="au_bof">播放器：</span>
+							<audio controls class="audio_play">
 								<source src="horse.ogg" type="audio/ogg">
-								<source src="horse.mp3" type="audio/mpeg">
+								<source src="images/herewithyou.mp3" type="audio/mpeg">
 								您的浏览器不支持 audio 元素。
 							</audio>
-							<span>|</span>
-							<a href="#">×</a>
+							<span class="sp_sg">|</span>
+							<a href="#" class="a_ch">×</a>
 						</div>
 						<div class="call_table">
 							<table id="dg" title=" " style="width:986px;height:auto;"
