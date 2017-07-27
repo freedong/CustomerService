@@ -240,15 +240,18 @@
 }
 
 .infor_fl{
+	width: 200px;
+	height: 267px;
 	position: relative;
+	background: url(../images/ul_bg.png) no-repeat;
 }
-.ab_bg{
+/* .ab_bg{
 	width: 200px;
 	height: 267px;
 	background-color: #000000; 
 	border-radius: 4px;
 	opacity: 0.1;
-}
+} */
 .ab_bg_ul{
 	position: absolute;
 	top: 0px;
@@ -257,9 +260,9 @@
 
 .infor_fl ul li a{
 	display: inline-block;
-	height: 36px;
-	line-height: 36px;
-	width: 188px;
+	height: 38px;
+	line-height: 38px;
+	width: 200px;
 	text-align: center;
 	font-size: 14px;
 	color: #ffffff;
@@ -281,20 +284,23 @@
 
 }
 .infor_fl ul li a.ajb{
-	background-position: 35px 8px;
+	background-position: 40px 8px;
 }
 .infor_fl ul li a.ath{
-	background-position: 35px -32px;
+	background-position: 40px -32px;
 }
 .infor_fl ul li a.acz{
-	background-position: 35px -67px;
+	background-position: 40px -67px;
 }
 .infor_fl ul li a.azd{
-	background-position: 37px -101px;
+	background-position: 42px -101px;
 }
 .abg{
-	background-color: #000000;
-	opacity: 0.2;
+	width: 200px;
+	height: 38px;
+	background: url(../images/li_jg.png) no-repeat;
+	/* background-color: #000000;
+	opacity: 0.2; */
 }
 
 .ls25{
